@@ -1,0 +1,21 @@
+---
+layout: archive
+title: "🎓 My Educational Journey"
+permalink: /education/
+author_profile: true
+---
+
+{% include base_path %}
+
+<div class="education-header">
+  <h1 style="text-align: center; font-size: 2.5em; font-weight: bold; margin-bottom: 0.2em;">
+    🎓 My Educational Journey
+  </h1>
+  <p style="text-align: center; font-size: 1.2em; color: #555; margin-bottom: 2em;">
+    A collection of schools and experiences that shaped my academic path.
+  </p>
+</div>
+
+{% for post in site.education reversed %}
+  {% include archive-single.html %}
+{% endfor %}
